@@ -1,0 +1,9 @@
+<h1>Checkout</h1>
+
+<ul>
+    <% Food.all.each do |food| %>
+        <% if food.user_id == @user.id %>
+            <li><%= food.name %></li>
+        <% end %>
+    <% end %>
+</ul>

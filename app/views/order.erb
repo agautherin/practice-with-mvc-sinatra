@@ -1,0 +1,11 @@
+
+
+
+
+<form action="/order/<%= @user.id %>" method="POST">
+    <label for="order">Enter your order</label>
+    <input type="text" name="order">
+    <input type="submit" name="SUBMIT HERE">
+</form>
+
+<a href="/order/<%= @user.id %>/checkout"> Go to checkout</a>
